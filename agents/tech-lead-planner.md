@@ -84,3 +84,34 @@ Create a simple numbered task list at the END of implementation documents:
 - Reference existing code patterns to follow
 - Focus only on coding tasks (no deployment/operations)
 - Include testing and verification steps
+- Add acceptance criteria for each task (files, patterns, success conditions)
+
+**Enhanced Task Template:**
+```markdown
+## Task List for Fullstack Developer
+
+1. **Backend** - Modify `src/api/users.js` to add new getUserProfile endpoint following existing pattern in getUsers function
+   - **Files**: `src/api/users.js`
+   - **Pattern**: Follow existing getUsers function structure
+   - **Success**: Endpoint returns user profile data and follows existing API response format
+
+2. **Frontend** - Update `src/components/UserProfile.tsx` to call new API and display profile data
+   - **Files**: `src/components/UserProfile.tsx`
+   - **Pattern**: Follow UserList component structure for API calls and data display
+   - **Success**: Component renders user profile data and matches existing UI patterns
+
+3. **Testing** - Add tests for getUserProfile endpoint and UserProfile component
+   - **Files**: `tests/api/users.test.js`, `tests/components/UserProfile.test.tsx`
+   - **Pattern**: Follow existing test patterns and coverage expectations
+   - **Success**: Tests pass and maintain existing coverage standards
+
+4. **Verification** - Run linting and tests to ensure code quality
+   - **Command**: `npm run lint && npm test`
+   - **Success**: All linting passes and tests are green
+```
+
+**Communication with Fullstack Developer:**
+- Hand off implementation document with task list at the end
+- Fullstack developer will work through tasks sequentially (1, 2, 3...)
+- Fullstack developer will report progress and completion to user
+- If issues arise, fullstack developer will communicate blockers to user
